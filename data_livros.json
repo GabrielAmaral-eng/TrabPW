@@ -1,0 +1,105 @@
+{
+    "nextId": 20,
+    "livros": [
+        {
+            "id": 1,
+            "titulo": "1984",
+            "autor": "George Orwell",
+            "editora": "Secker & Warburg",
+            "ano_publicacao": 1949,
+            "genero": "Ficção Distópica",
+            "paginas": 328,
+            "avaliacao": 9.6
+        },
+        {
+            "id": 2,
+            "titulo": "O Senhor dos Anéis: A Sociedade do Anel",
+            "autor": "J.R.R. Tolkien",
+            "editora": "Allen & Unwin",
+            "ano_publicacao": 1954,
+            "genero": "Fantasia",
+            "paginas": 423,
+            "avaliacao": 9.8
+        },
+        {
+            "id": 3,
+            "titulo": "Dom Quixote",
+            "autor": "Miguel de Cervantes",
+            "editora": "Francisco de Robles",
+            "ano_publicacao": 1605,
+            "genero": "Aventura",
+            "paginas": 863,
+            "avaliacao": 9.4
+        },
+        {
+            "id": 4,
+            "titulo": "Orgulho e Preconceito",
+            "autor": "Jane Austen",
+            "editora": "T. Egerton",
+            "ano_publicacao": 1813,
+            "genero": "Romance",
+            "paginas": 279,
+            "avaliacao": 9.2
+        },
+        {
+            "id": 5,
+            "titulo": "O Pequeno Príncipe",
+            "autor": "Antoine de Saint-Exupéry",
+            "editora": "Reynal & Hitchcock",
+            "ano_publicacao": 1943,
+            "genero": "Infantil/Filosófico",
+            "paginas": 96,
+            "avaliacao": 9.5
+        },
+        {
+            "id": 6,
+            "titulo": "Crime e Castigo",
+            "autor": "Fiódor Dostoiévski",
+            "editora": "The Russian Messenger",
+            "ano_publicacao": 1866,
+            "genero": "Drama Psicológico",
+            "paginas": 671,
+            "avaliacao": 9.3
+        },
+        {
+            "id": 7,
+            "titulo": "Cem Anos de Solidão",
+            "autor": "Gabriel García Márquez",
+            "editora": "Editorial Sudamericana",
+            "ano_publicacao": 1967,
+            "genero": "Realismo Mágico",
+            "paginas": 417,
+            "avaliacao": 9.7
+        },
+        {
+            "id": 8,
+            "titulo": "Harry Potter e a Pedra Filosofal",
+            "autor": "J.K. Rowling",
+            "editora": "Bloomsbury",
+            "ano_publicacao": 1997,
+            "genero": "Fantasia",
+            "paginas": 223,
+            "avaliacao": 9.1
+        },
+        {
+            "id": 9,
+            "titulo": "O Hobbit",
+            "autor": "J.R.R. Tolkien",
+            "editora": "Allen & Unwin",
+            "ano_publicacao": 1937,
+            "genero": "Fantasia",
+            "paginas": 310,
+            "avaliacao": 9.4
+        },
+        {
+            "id": 10,
+            "titulo": "O Código Da Vinci",
+            "autor": "Dan Brown",
+            "editora": "Doubleday",
+            "ano_publicacao": 2003,
+            "genero": "Suspense",
+            "paginas": 489,
+            "avaliacao": 8.9
+        }
+    ]
+}

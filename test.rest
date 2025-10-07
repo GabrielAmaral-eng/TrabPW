@@ -1,0 +1,60 @@
+### Solicita um token para o usuário com esse api_key
+POST http://localhost:3000/authenticate
+content-type: application/json
+
+{
+  "api_key":"4a8e078e-33b7-4d94-926f-27f79fe2e04c"
+}
+
+### Solicita a listagem das músicas (resumido e ordenado por popularidade)
+GET http://localhost:3000/livros
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIyIiwiaWF0IjoxNzU5Njk5NzY2MTY2LCJpc3MiOiJlc2VnIiwiZXhwIjoxNzU5NzAzMzY2MTY2fQ==.UkfBM6YSuyLv9Sq+c/ChsmNlgnHgvz1+66upvPbWlOM=
+
+### Solicita a listagem das músicas, mas sem autorização, deve retornar 403
+GET http://localhost:3000/jogos
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIyIiwiaWF0IjoxNzU4ODU2ODk2MzE5LCJpc3MiOiJlc2VnIiwiZXhwIjoxNzU4ODYwNDk2MzE5fQ==.SHQlIJP3ytMycZGDKyZTk3WFTtpTQdJtKVGBdp3hroU=
+
+
+### Solicita detalhes da música de id 3
+GET http://localhost:3000/jogos/3
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIyIiwiaWF0IjoxNzU4ODU2ODk2MzE5LCJpc3MiOiJlc2VnIiwiZXhwIjoxNzU4ODYwNDk2MzE5fQ==.SHQlIJP3ytMycZGDKyZTk3WFTtpTQdJtKVGBdp3hroU=
+
+### Solicita detalhes da música de id 100, mas não há id 100, deve retornar 404
+GET http://localhost:3000/jogos/100
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIyIiwiaWF0IjoxNzU4ODU2ODk2MzE5LCJpc3MiOiJlc2VnIiwiZXhwIjoxNzU4ODYwNDk2MzE5fQ==.SHQlIJP3ytMycZGDKyZTk3WFTtpTQdJtKVGBdp3hroU=
+
+### Insere a música na lista, deve retornar o id que ela receber pós inserção
+POST http://localhost:3000/jogos
+content-type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIyIiwiaWF0IjoxNzU4ODU2ODk2MzE5LCJpc3MiOiJlc2VnIiwiZXhwIjoxNzU4ODYwNDk2MzE5fQ==.SHQlIJP3ytMycZGDKyZTk3WFTtpTQdJtKVGBdp3hroU=
+
+{
+  "titulo": "Tempo Perdido",
+  "desenvolvedora": "Ubisoft",
+  "plataforma": "Playstation",
+  "ano_lancamento": 2015,
+  "genero": "FPS",
+  "duracao_media_horas": "100",
+  "avaliacao": 8.4
+}
+
+### Remove a música com id 18, se não houver, retorna 404
+DELETE http://localhost:3000/jogos/20
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIyIiwiaWF0IjoxNzU4ODU2ODk2MzE5LCJpc3MiOiJlc2VnIiwiZXhwIjoxNzU4ODYwNDk2MzE5fQ==.SHQlIJP3ytMycZGDKyZTk3WFTtpTQdJtKVGBdp3hroU=
+
+
+###Altera a música com id 17, se não houver, retorna 404
+PUT http://localhost:3000/jogos/21
+content-type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIyIiwiaWF0IjoxNzU4ODU2ODk2MzE5LCJpc3MiOiJlc2VnIiwiZXhwIjoxNzU4ODYwNDk2MzE5fQ==.SHQlIJP3ytMycZGDKyZTk3WFTtpTQdJtKVGBdp3hroU=
+
+{
+    "id": 21,
+    "titulo": "Tempo Perdido",
+    "desenvolvedora": "Ubisoft",
+    "plataforma": "Playstation",
+    "ano_lancamento": 2015,
+    "genero": "FPS",
+    "duracao_media_horas": "100",
+    "avaliacao": 8.6
+}
